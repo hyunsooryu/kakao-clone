@@ -34,10 +34,12 @@
       background-color: blue;
       transform: rotate(1turn) scale(2,2);
     }
-    .container{
+    .container, .container > span{
       transition: all 3s ease-in-out;
       animation: 10s scale-and-rotate-square infinite ease-in-out;
-
+      display:flex;
+      justify-content: center;
+      align-items: center;
     }
 
     @keyframes scale-and-rotate-square{
@@ -58,8 +60,7 @@
 </head>
 <body>
   <div class = "vertic"></div><section class = "main">
-  <div class = "container">
-  </div>
+  <div class = "container"><span>hi</span></div>
 </section>
 </body>
 </html>
