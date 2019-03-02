@@ -32,10 +32,26 @@
     }
     div[class = "container"]:hover{
       background-color: blue;
-      transform: rotate(5turn) scale(2,2);
+      transform: rotate(1turn) scale(2,2);
     }
     .container{
       transition: all 3s ease-in-out;
+      animation: 10s scale-and-rotate-square infinite ease-in-out;
+
+    }
+
+    @keyframes scale-and-rotate-square{
+      0%{
+        transform:none;
+      }
+      50%{
+        transform:rotate(1turn) scale(2,2);
+        background-color: blue;
+      }
+      100%{
+        transform: none;
+        background-color: yellow;
+      }
     }
 
   </style>
