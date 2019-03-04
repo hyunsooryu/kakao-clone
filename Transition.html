@@ -4,63 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <style>
     html,body{
       height:100%;
-      text-align:center;
     }
-    .container{
+    .box{
       width:200px;
       height:200px;
+      background-color: green;
+      transition: transform 0.5s ease-in-out;
+      animation: animation_1 3s  ease-in-out infinite;
+    }
+
+    div[class = "box"]:hover{
+      transform: rotate(10turn) scale(3,3);
+    }
+
+    .main{
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      height: 100%;
       background-color: yellow;
     }
-    section.main{
-      display: inline-flex;
-      height:400px;
-      width:400px;
-      background-color:green;
-      justify-content: center;
-      align-items: center;
-      vertical-align: middle;
-    }
 
-    .vertic{
-      height:100%;
-      background-color: blue;
-      display:inline-block;
-      vertical-align: middle;
-    }
-    div[class = "container"]:hover{
-      background-color: blue;
-      transform: rotate(1turn) scale(2,2);
-    }
-    .container, .container > span{
-      transition: all 3s ease-in-out;
-      animation: 10s scale-and-rotate-square infinite ease-in-out;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    @keyframes scale-and-rotate-square{
+    @keyframes animation_1{
       0%{
-        transform:none;
+        transform: none;
       }
       50%{
-        transform:rotate(1turn) scale(2,2);
-        background-color: blue;
+        transform: rotate(5turn) scale(4,4);
       }
       100%{
         transform: none;
-        background-color: yellow;
       }
     }
-
   </style>
 </head>
 <body>
-  <div class = "vertic"></div><section class = "main">
-  <div class = "container"><span>hi</span></div>
+<section class = "main">
+  <div class = "box"></div>
 </section>
 </body>
 </html>
