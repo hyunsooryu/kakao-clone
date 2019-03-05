@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .more__plus_friends__items{
+            overflow: hidden;
+            background-color: green;
+            width: 500px;
+            height:200px;
+        }
+        .more__plus_friends__item{
+            background-color: yellow;
+            width:250px;
+            height:50px;
+            float: left;
+            line-height:50px;
+        }
+        .more__plus_friends__item:nth-child(2n + 1){
+            background-color: green;
+        }
+        .more__plus_friends__item > i{
+            margin-left: 20px;
+            margin-right: 5px;
+            animation: animation_for_i_fafa 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        }
+
+        @keyframes animation_for_i_fafa{
+            0%{
+                transform: rotate(-25deg);
+            }
+            50%{
+                transform: rotate(25deg);
+            }
+            100%{
+                transform:rotate(-25deg);
+            }
+        }
+
+    </style>
     <title>More</title>
 </head>
 <body>
@@ -34,6 +70,63 @@
         </div>
     </div>
 </header>
+<main class="more">
+    <header class="more__header">
+        <div class="more-header__column">
+            <img src="images/avatar.jpg" alt="avatar">
+            <div class="more-header__info">
+                <h3 class="more-header__title">HYUN SOO RYU</h3>
+                <span class="more-header__subtitle">20132513@ssu.ac.kr / WEB DEVELOPER</span>
+            </div>
+        </div>
+        <i class="fa fa-comment fa-2x"></i>
+    </header>
+    <section class="more__options">
+        <section class="more__option"><i class="fa fa-smile-o fa-2x"></i><span class="more__option-title">Emoticons</span></section>
+        <section class="more__option"><i class="fa fa-paint-brush fa-2x"></i><span class="more__option-title">Themes</span></section>
+        <section class="more__option"><i class="fa fa-hand-peace-o fa-2x"></i><span class="more__option-title">Plus Friend</span></section>
+        <section class="more__option"><i class="fa fa-user-circle-o fa-2x"></i><span class="more__option-title"></span>Account</section>
+    </section>
+    <section class="more_plus__friends">
+        <header class="more__plus__friends-header">
+            <h2 class="more_plus__friends-title"></h2>
+            <span class="plus_friends_Learn_More">
+                <i class="fa fa-info-circle"></i><span class = "Learn_More_Text">Learn More</span>
+            </span>
+        </header>
+        <div class="more__plus_friends__items">
+            <div class="more__plus_friends__item">
+                <i class="fa fa-cutlery"></i><span class="more__plus_friends__item-title">Order</span>
+            </div>
+            <div class="more__plus_friends__item">
+                <i class="fa fa-home"></i><span class="more__plus_friends__item-title">Store</span>
+            </div>
+            <div class="more__plus_friends__item">
+                <i class="fa fa-tv"></i><span class="more__plus_friends__item-title">TV Channel/Radio...</span>
+            </div>
+            <div class="more__plus_friends__item">
+                <i class="fa fa-pencil"></i><span class="more__plus_friends__item-title">Creation</span>
+            </div>
+            <div class="more__plus_friends__item">
+                <i class="fa fa-graduation-cap"></i><span class="more__plus_friends__item-title">Education</span>
+            </div>
+            <div class="more__plus_friends__item">
+                <i class="fa fa-university"></i><span class="more__plus_friends__item-title">Politics/Society</span>
+            </div>
+            <div class="more__plus_friends__item">
+                <i class="fa fa-krw"></i><span class="more__plus_friends__item-title">Finance</span>
+            </div>
+            <div class="more__plus_friends__item">
+                <i class="fa fa-camera"></i><span class="more__plus_friends__item-title">Movies/Musics</span>
+            </div>
+        </div>
+        <div class="more_about_options">
+            <div class="more_about_option"><img width = "20px" height = "20px" src="images/kakaoStory.png" alt="IMAGE_PREPARING" class="more_about_option-image"><span class="more_about_option-text">Kakao Story</span></div>
+            <div class="more_about_option"><img width = "20px" height = "20px" src="images/path.png" alt="IMAGE_PREPARING" class="more_about_option-image"><span class="more_about_option-text">Path</span></div>
+            <div class="more_about_option"><img width = "20px" height = "20px" src="images/kakaoFriends.png" alt="IMAGE_PREPARING" class="more_about_option-image"><span class="more_about_option-text">Kakao Friends</span></div>
+        </div>
+    </section>
+</main>
 <nav class = "tab-bar"><a href="" class="tab_bar__tab"></a>
     <a href="index.html" class="tab_bar__tab">
         <i class="fa fa-user"></i><span class="tab_bar__title">Friends</span>
