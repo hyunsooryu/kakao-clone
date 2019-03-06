@@ -1,0 +1,78 @@
+header.top-header{
+    background-color: #523737;
+    color: rgb(255,255,255);
+    padding: 5px 10px 15px 10px;
+}
+
+div.header__top{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+div.header__bottom{
+    margin: 0px 10px;
+}
+
+
+div.header__top,
+div.header__bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-header .header__column{
+    width:33%;
+}
+
+.top-header .header__column:nth-child(2){
+    text-align: center;
+}
+
+.top-header .header__column:last-child{
+    text-align: right;
+}
+
+span.header__number{
+    color: yellow;
+    animation: color_num_change 2s infinite linear;
+}
+
+.fa-cog{
+    transition: transform 2s linear;
+    animation: wheel_rotater 2s infinite linear;
+}
+
+
+
+
+
+/*animation part start*/
+@keyframes wheel_rotater{
+    0%{
+        opacity: 1;
+        transform:rotate(0deg);
+    }
+    50%{
+        opacity: 1;
+        transform:rotate(180deg);
+    }
+    100%{
+        opacity: 1;
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes color_num_change{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+        color: white;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*end animation part/
+
