@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding-top:119px;
+    padding-bottom:70px;
+}
+

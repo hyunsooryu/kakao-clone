@@ -1,0 +1,32 @@
+.search-bar{
+    padding:10px 5px;
+    text-align: center;
+    border-bottom:1px solid gainsboro;
+    position:fixed;
+    top:59px;
+    width:100%;
+    background-color: white;
+}
+
+.search-bar > input{
+    width: 90%;
+    border: 0.8px solid gainsboro;
+    border-radius: 7px;
+    text-align: center;
+    background-color: rgb(244,244,244);
+    height:20px;
+    line-height:20px;
+    color:gray;
+}
+
+.search-bar > input:focus{
+    background-color: white;
+}
+
+.search-bar > i{
+    font-size:13px;
+    position: fixed;
+    left: 23%;
+    top:71px;
+    color:gray;
+}

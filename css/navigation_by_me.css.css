@@ -1,0 +1,51 @@
+.tab-bar{
+    background-color:gainsboro;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    align-items: center;
+    height: 60px;
+    border-top:3px solid #c1c1c1;
+}
+
+
+
+.tab-bar > a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0,0,0, 0.5);
+    text-align: center;
+}
+
+
+.tab-bar > a > i{
+    margin-bottom:10px;
+    font-size: 25px;
+    display:block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tab-bar > a > i:hover{
+    transform: scale3d(1.5,2,2) translateY(-5px);
+}
+
+.tab_bar__tab--selected > i{
+    color: black;
+}
+
+.tab_bar__tab > span{
+    font-size: 11px;
+}
+
+.tab_bar__tab--selected > span{
+    color: black;
+    font-weight: bold;
+    
+}
+
+
+
